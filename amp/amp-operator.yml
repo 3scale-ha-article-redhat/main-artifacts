@@ -7,7 +7,7 @@ spec:
   imageStreamTagImportInsecure: true
   system:
     image: >-
-      default-route-openshift-image-registry.apps.cluster-464pv.464pv.sandbox1386.opentlc.com/amp/system-oracle:2.10.0-1
+      [oracle-system-image-url]
   highAvailability:
     enabled: true
-  wildcardDomain: apps.cluster-464pv.464pv.sandbox1386.opentlc.com
+  wildcardDomain: [openshift-cluster-wildcard]

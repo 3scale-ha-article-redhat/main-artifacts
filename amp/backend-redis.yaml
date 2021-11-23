@@ -4,10 +4,9 @@ kind: Secret
 metadata:
   name: backend-redis
 stringData:
-  REDIS_STORAGE_URL: "redis://redis-master:6379"
-  REDIS_STORAGE_SENTINEL_HOSTS: "redis://3.91.197.24:26379,redis://54.227.39.199:26379,redis://52.207.137.253:26379"
+  REDIS_STORAGE_URL: "redis://<sentinel-master-group-name>:6379"
+  REDIS_STORAGE_SENTINEL_HOSTS: "redis://<redis-sentinel-host-1>:26379,redis://<redis-sentinel-host-2>:26379,redis://<redis-sentinel-host-3>:26379"
   REDIS_STORAGE_SENTINEL_ROLE: "master"
-  REDIS_QUEUES_URL: "redis://redis-master:6379"
-  REDIS_QUEUES_SENTINEL_HOSTS: "redis://3.91.197.24:26379,redis://54.227.39.199:26379,redis://52.207.137.253:26379"
+  REDIS_QUEUES_URL: "redis://<sentinel-master-group-name>:6379"
+  REDIS_QUEUES_SENTINEL_HOSTS: "redis://<redis-sentinel-host-1>:26379,redis://<redis-sentinel-host-2>:26379,redis://<redis-sentinel-host-3>:26379"
   REDIS_QUEUES_SENTINEL_ROLE: "master"
-type: Opaque
