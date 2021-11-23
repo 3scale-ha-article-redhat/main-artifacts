@@ -1,0 +1,13 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  namespace: amp
+  name: my-apimanager
+spec:
+  imageStreamTagImportInsecure: true
+  system:
+    image: >-
+      default-route-openshift-image-registry.apps.cluster-464pv.464pv.sandbox1386.opentlc.com/amp/system-oracle:2.10.0-1
+  highAvailability:
+    enabled: true
+  wildcardDomain: apps.cluster-464pv.464pv.sandbox1386.opentlc.com

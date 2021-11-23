@@ -1,0 +1,3 @@
+[redis-master-host]
+[redis-replica-host]
+[redis-sentinel-host]
