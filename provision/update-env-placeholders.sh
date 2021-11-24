@@ -1,5 +1,7 @@
 #!/bin/sh -v
 
+OCP_CLUSTER_WILDCARD=apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com
+ORACLE_IMAGE_URL='default-route-openshift-image-registry.apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com\/amp\/system-oracle:2.10.0-1'
 CURRENT_DIR=$(dirname $0)/..
 ORACLE_USER=admin
 ORACLE_PASS=admin123
@@ -26,3 +28,5 @@ egrep -lR "\[oracle-password\]" $CURRENT_DIR | xargs -L1 sed -i -e "s/\[oracle-p
 egrep -lR "\[oracle-host\]" $CURRENT_DIR | xargs -L1 sed -i -e "s/\[oracle-host\]/$ORACLE_HOST/g"
 egrep -lR "\[oracle-sid\]" $CURRENT_DIR | xargs -L1 sed -i -e "s/\[oracle-sid\]/$ORACLE_SID/g"
 egrep -lR "\[oracle-system-password\]" $CURRENT_DIR | xargs -L1 sed -i -e "s/\[oracle-system-password\]/$ORACLE_SYS_PASS/g"
+egrep -lR "\[oracle-system-image-url\]" $CURRENT_DIR | xargs -L1 sed -i -e "s/\[oracle-system-image-url\]/$ORACLE_IMAGE_URL/g"
+egrep -lR "\[openshift-cluster-wildcard\]" $CURRENT_DIR | xargs -L1 sed -i -e "s/\[openshift-cluster-wildcard\]/$OCP_CLUSTER_WILDCARD/g"
