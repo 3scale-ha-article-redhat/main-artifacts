@@ -3,11 +3,11 @@
 OCP_CLUSTER_WILDCARD=apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com
 ORACLE_IMAGE_URL='default-route-openshift-image-registry.apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com\/amp\/system-oracle:2.11.0-1'
 CURRENT_DIR=$(dirname $0)/..
-ORACLE_USER=admin
-ORACLE_PASS=oracle123
-ORACLE_SID=apis
+ORACLE_USER=<change-me>
+ORACLE_PASS=<change-me>
+ORACLE_SID=<change-me>
 ORACLE_HOST=18.209.65.179
-ORACLE_SYS_PASS=oracle123
+ORACLE_SYS_PASS=<change-me>
 REDIS_MASTER=54.242.215.50
 REDIS_REPLICA_1=107.23.187.38
 REDIS_REPLICA_2=54.227.102.185
