@@ -1,10 +1,10 @@
 #!/bin/sh -v
 
 OCP_CLUSTER_WILDCARD=apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com
-ORACLE_IMAGE_URL='default-route-openshift-image-registry.apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com\/amp\/system-oracle:2.10.0-1'
+ORACLE_IMAGE_URL='default-route-openshift-image-registry.apps.cluster-bqnx2.bqnx2.sandbox1697.opentlc.com\/amp\/system-oracle:2.11.0-1'
 CURRENT_DIR=$(dirname $0)/..
 ORACLE_USER=admin
-ORACLE_PASS=admin123
+ORACLE_PASS=oracle123
 ORACLE_SID=apis
 ORACLE_HOST=18.209.65.179
 ORACLE_SYS_PASS=oracle123
