@@ -4,6 +4,6 @@ kind: Secret
 metadata:
   name: system-database
 stringData:
-  URL: "oracle-enhanced://<user>:<password>@<oracle-host>:1521/<sid>"
-  ORACLE_SYSTEM_PASSWORD: "<system-password>"
+  URL: "oracle-enhanced://[oracle-user]:[oracle-password]@[oracle-host]:1521/[oracle-sid]"
+  ORACLE_SYSTEM_PASSWORD: "[oracle-system-password]"
 type: Opaque
